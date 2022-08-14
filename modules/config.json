@@ -1,0 +1,47 @@
+{
+	"utility": {
+		"textui": true,
+		"qtarget": false,
+	},
+	"point": {
+		"x": 295.4110,
+		"y": -1447.6251,
+		"z": 29.9666,
+	},
+	"general": {
+		"statebag": true,
+		"debug": true,
+	},
+	"hospital": {
+		"name": "Medical Center",
+		"id": 61,
+		"size": 0.7,
+		"color": 23,
+		"x": 294.6998,
+		"y": -1448.4919,
+	},
+	"npc": {
+		"model": "s_m_m_doctor_01",
+		"x": 294.6998,
+		"y": -1448.4919,
+		"z": 29.9666,
+		"h": 320.2867,
+	},
+	"treatment": {
+		"item": "money",
+		"costmoney": true,
+		"price": 2000,
+		"dict": "missheistdockssetup1clipboard@base",
+		"anim": "base",
+	},
+	"bandage": {
+		"item": "bandage",
+		"price": 300,
+	},
+	"bleeding": {
+		"set": true,
+		"anim": "move_m@injured",
+		"effect": "SMALL_EXPLOSION_SHAKE",
+		"intensity": 1.0
+	}
+}
