@@ -10,7 +10,7 @@ SetInterval(function()
 	if health <= 150 then
 		playerState.isBleeding = true
 		SetEntityHealth(cache.ped, health - 1)
-		lib.defaultNotify({ title = "", position = "top", description = 'You need medical attention', status = "error" })
+		lib.defaultNotify({ title = "", position = "top", description = locale("medical_attention"), status = "error" })
 
 		lib.requestAnimSet(config.bleeding.anim)
 		SetPedMovementClipset(ped, config.bleeding.anim, true)
@@ -37,16 +37,16 @@ local function beginTreatment()
 		lib.progressCircle({
 			duration = 3500,
 			position = "bottom",
-			label = "Signing in..",
+			label = locale('progress_label'),
 			disable = { move = false },
 			anim = { dict = config.treatment.dict, clip = config.treatment.anim },
 		})
 	then
 		SetEntityHealth(cache.ped, 200)
 		lib.defaultNotify({
-			title = 'Medical Center',
+			title = locale("hospital_name"),
 			position = "top",
-			description = 'You have successfully been treated, and can go on your way.',
+			description = locale("player_treated"),
 			status = "success",
 		})
 	end
@@ -64,7 +64,7 @@ RegisterNetEvent("new-hospital:requestTreatment", function()
 	end
 end)
 
-RegisterNetEvent("new-hospital:bandage", function()
+RegisterNetEvent("new-hospital:requestBandage", function()
 	lib.callback("new-hospital:purchaseBandage", false, function(success)
 		if success then
 			print("bandage purchased")

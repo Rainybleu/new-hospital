@@ -1,0 +1,22 @@
+{
+	"hospital_name": "Medical Center",
+
+	"medical_treatment": "Medical Treatment",
+	"first_description": "A procedure, or regimen, such as a drug, surgery, or exercise, in an attempt to cure or mitigate a disease, condition, or injury.",
+	"first_metadata": "You will feel dizzy, and nauseous for a short period of time after the procedure.",
+
+	"need_bandage": "Need a bandage?",
+	"second_description": "Buy a strip of material used to bind a wound or to protect an injured part of the body.",
+	"second_metadata": "This seems like a better idea, yea?",
+
+
+	"text_ui": "Press [E] to open the hospital menu",
+	"target_label": "Check In",
+	"progress_label": "Signing in..",
+	"medical_attention": "You need medical attention, visit the Medical Center.",
+
+	"no_money": "You do not have enough cash, please visit the local bank.",
+	"player_billed": "You were billed by the Medical Center.",
+	"player_treated": "You have successfully been treated, and can go on your way.",
+	"purchased_bandage": "You have successfully purchased a bandage."
+}
