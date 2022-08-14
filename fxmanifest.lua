@@ -1,9 +1,11 @@
 fx_version 'cerulean'
-
 game 'gta5'
-lua54 'yes'
-version '0.0.2'
+
+author 'Qpr'
+version '0.0.3'
 description 'New-Hospital'
+
+lua54 'yes'
 
 shared_script '@ox_lib/init.lua'
 shared_script 'modules/init.lua'
